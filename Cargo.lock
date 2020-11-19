@@ -18,7 +18,7 @@ dependencies = [
  "codespan-reporting",
  "datatest-stable",
  "heck",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-temppath",
  "libra-types",
  "libra-workspace-hack",
@@ -248,7 +248,7 @@ dependencies = [
  "futures 0.3.8",
  "hex",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -285,7 +285,7 @@ dependencies = [
  "bytes",
  "futures 0.3.8",
  "hyper",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-logger",
@@ -319,6 +319,16 @@ name = "base64"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
+
+[[package]]
+name = "bincode"
+version = "1.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f30d3a39baa26f9651f17b375061f3233dde33424a8b72b0dbe93a68a0bc896d"
+dependencies = [
+ "byteorder",
+ "serde",
+]
 
 [[package]]
 name = "bindgen"
@@ -506,7 +516,7 @@ dependencies = [
  "anyhow",
  "codespan",
  "codespan-reporting",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-core-types",
@@ -705,7 +715,7 @@ dependencies = [
  "crash-handler",
  "generate-key",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -765,7 +775,7 @@ dependencies = [
  "itertools 0.9.0",
  "k8s-openapi",
  "kube",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-genesis-tool",
@@ -858,7 +868,7 @@ dependencies = [
  "anyhow",
  "bytecode-verifier",
  "include_dir",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-types",
  "libra-workspace-hack",
@@ -877,7 +887,7 @@ dependencies = [
  "bytecode-verifier",
  "compiled-stdlib",
  "ir-to-bytecode",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-ir-types",
@@ -903,7 +913,7 @@ dependencies = [
  "fail",
  "futures 0.3.8",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -944,7 +954,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "executor-types",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-infallible",
@@ -1247,7 +1257,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "executor",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-temppath",
@@ -1541,7 +1551,7 @@ dependencies = [
  "anyhow",
  "codespan-reporting",
  "datatest-stable",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "log",
@@ -1561,7 +1571,7 @@ dependencies = [
  "executor",
  "executor-test-helpers",
  "executor-types",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-genesis-tool",
@@ -1593,7 +1603,7 @@ dependencies = [
  "executor-types",
  "fail",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-genesis-tool",
@@ -1673,7 +1683,7 @@ name = "executor-types"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-secure-net",
  "libra-types",
@@ -1933,7 +1943,7 @@ version = "0.1.0"
 dependencies = [
  "consensus",
  "consensus-types",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-crypto-derive",
@@ -1953,7 +1963,7 @@ dependencies = [
 name = "generate-key"
 version = "0.1.0"
 dependencies = [
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-temppath",
  "libra-workspace-hack",
@@ -1984,7 +1994,7 @@ name = "genesis-viewer"
 version = "0.1.0"
 dependencies = [
  "compiled-stdlib",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "resource-viewer",
@@ -2640,7 +2650,7 @@ dependencies = [
  "compiler",
  "goldenfile",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-proptest-helpers",
@@ -2667,7 +2677,7 @@ dependencies = [
  "compiled-stdlib",
  "compiler",
  "language-e2e-tests",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-logger",
  "libra-types",
@@ -2726,7 +2736,7 @@ dependencies = [
 name = "libra-bitvec"
 version = "0.1.0"
 dependencies = [
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-proptest-helpers",
  "libra-workspace-hack",
  "proptest",
@@ -2748,11 +2758,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "libra-canonical-serialization"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d8dddda30939e963210412740c920779b3b57d0b8ab58d94d562cc433d621f1"
+dependencies = [
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "libra-config"
 version = "0.1.0"
 dependencies = [
  "get_if_addrs",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-global-constants",
@@ -2788,7 +2808,7 @@ dependencies = [
  "ed25519-dalek 1.0.1 (git+https://github.com/novifinancial/ed25519-dalek.git?branch=fiat5)",
  "hex",
  "hkdf",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto-derive",
  "libra-nibble",
  "libra-workspace-hack",
@@ -2831,7 +2851,7 @@ version = "0.1.0"
 dependencies = [
  "bindgen",
  "libc",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-types",
  "libra-workspace-hack",
@@ -2864,7 +2884,7 @@ dependencies = [
  "anyhow",
  "futures 0.3.8",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-json-rpc-client",
  "libra-types",
  "libra-workspace-hack",
@@ -2880,7 +2900,7 @@ dependencies = [
  "anyhow",
  "generate-key",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -2924,7 +2944,7 @@ dependencies = [
  "executor-types",
  "hex",
  "language-e2e-tests",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-jellyfish-merkle",
  "libra-json-rpc",
@@ -2962,7 +2982,7 @@ dependencies = [
  "consensus-types",
  "executor",
  "generate-key",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-global-constants",
@@ -3015,7 +3035,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "byteorder",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-infallible",
@@ -3045,7 +3065,7 @@ dependencies = [
  "generate-key",
  "hex",
  "hyper",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-genesis-tool",
@@ -3085,7 +3105,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-json-rpc-types",
@@ -3105,7 +3125,7 @@ dependencies = [
  "anyhow",
  "compiled-stdlib",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-types",
  "libra-workspace-hack",
@@ -3183,7 +3203,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-global-constants",
@@ -3212,7 +3232,7 @@ dependencies = [
  "fail",
  "futures 0.3.8",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -3270,7 +3290,7 @@ version = "0.1.0"
 dependencies = [
  "aes-gcm",
  "anyhow",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-workspace-hack",
  "move-core-types",
@@ -3287,7 +3307,7 @@ name = "libra-network-address-encryption"
 version = "0.1.0"
 dependencies = [
  "base64 0.13.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-global-constants",
  "libra-infallible",
  "libra-logger",
@@ -3352,7 +3372,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-global-constants",
@@ -3399,7 +3419,7 @@ dependencies = [
  "anyhow",
  "futures 0.3.8",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-json-rpc",
@@ -3448,7 +3468,7 @@ dependencies = [
  "base64 0.13.0",
  "chrono",
  "enum_dispatch",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-github-client",
@@ -3550,7 +3570,7 @@ dependencies = [
  "anyhow",
  "compiled-stdlib",
  "difference",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-state-view",
  "libra-types",
  "libra-validator-interface",
@@ -3578,7 +3598,7 @@ dependencies = [
  "chrono",
  "hex",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-infallible",
@@ -3604,7 +3624,7 @@ name = "libra-validator-interface"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-json-rpc-client",
  "libra-state-view",
@@ -3641,7 +3661,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "fail",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-logger",
  "libra-metrics",
@@ -3705,7 +3725,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "handlebars",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-lang",
@@ -3725,7 +3745,7 @@ dependencies = [
  "arc-swap",
  "byteorder",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -3990,7 +4010,7 @@ dependencies = [
  "difference",
  "disassembler",
  "errmapgen",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-state-view",
  "libra-types",
  "libra-vm",
@@ -4013,7 +4033,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-crypto-derive",
  "libra-workspace-hack",
@@ -4041,7 +4061,7 @@ dependencies = [
  "bytecode-verifier",
  "codespan",
  "colored",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-core-types",
@@ -4059,7 +4079,7 @@ version = "0.1.0"
 dependencies = [
  "compiled-stdlib",
  "errmapgen",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-workspace-hack",
  "move-core-types",
  "structopt 0.3.20",
@@ -4093,7 +4113,7 @@ dependencies = [
  "difference",
  "hex",
  "ir-to-bytecode",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-core-types",
@@ -4228,7 +4248,7 @@ dependencies = [
 name = "move-vm-types"
 version = "0.1.0"
 dependencies = [
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-workspace-hack",
  "mirai-annotations",
@@ -4327,7 +4347,7 @@ dependencies = [
  "futures-util",
  "hex",
  "libra-bitvec",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-crypto-derive",
@@ -4365,7 +4385,7 @@ version = "0.1.0"
 dependencies = [
  "channel",
  "futures 0.3.8",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-infallible",
@@ -4393,7 +4413,7 @@ dependencies = [
  "anyhow",
  "channel",
  "futures 0.3.8",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-logger",
@@ -5486,7 +5506,7 @@ dependencies = [
  "anyhow",
  "compiled-stdlib",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-state-view",
  "libra-types",
  "libra-workspace-hack",
@@ -5729,7 +5749,7 @@ dependencies = [
  "consensus-types",
  "crash-handler",
  "criterion",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-global-constants",
@@ -5840,7 +5860,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-logger",
@@ -5882,12 +5902,14 @@ dependencies = [
 
 [[package]]
 name = "serde-generate"
-version = "0.15.2"
+version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8dbbd5f23fb6261d94e4364f4904b881a44f3f6900005d120684036dc7d5239b"
+checksum = "d318fbd6ee6b078bf0da7ef6e97152a1a4802125f43443f61a8a8e711ccc1efb"
 dependencies = [
+ "bincode",
  "heck",
  "include_dir",
+ "libra-canonical-serialization 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "maplit",
  "serde",
  "serde-reflection",
@@ -6152,7 +6174,7 @@ dependencies = [
  "debug-interface",
  "generate-key",
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-events-fetcher",
@@ -6272,7 +6294,7 @@ dependencies = [
  "fail",
  "futures 0.3.8",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-genesis-tool",
@@ -6333,7 +6355,7 @@ dependencies = [
  "bytecode-verifier",
  "clap",
  "datatest-stable",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-types",
  "libra-workspace-hack",
@@ -6400,7 +6422,7 @@ name = "storage-client"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-infallible",
  "libra-logger",
@@ -6417,7 +6439,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-secure-net",
  "libra-state-view",
@@ -6436,7 +6458,7 @@ dependencies = [
  "anyhow",
  "futures 0.3.8",
  "itertools 0.9.0",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-logger",
@@ -6532,7 +6554,7 @@ name = "swiss-knife"
 version = "0.1.0"
 dependencies = [
  "hex",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-crypto",
  "libra-types",
  "libra-workspace-hack",
@@ -6974,7 +6996,7 @@ name = "transaction-builder-generated"
 version = "0.1.0"
 dependencies = [
  "compiled-stdlib",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-proptest-helpers",
  "libra-types",
  "libra-workspace-hack",
@@ -6991,7 +7013,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "heck",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-types",
  "libra-workspace-hack",
  "move-core-types",
@@ -7228,7 +7250,7 @@ dependencies = [
  "anyhow",
  "bytecode-verifier",
  "compiled-stdlib",
- "libra-canonical-serialization",
+ "libra-canonical-serialization 0.1.0",
  "libra-config",
  "libra-crypto",
  "libra-network-address",
